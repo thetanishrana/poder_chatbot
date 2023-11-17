@@ -13,7 +13,7 @@ with st.sidebar:
         if not (openai.api_key.startswith('sk-') and len(openai.api_key)==51):
             st.warning('Please enter your credentials!', icon='⚠️')
         else:
-            st.success('Proceed to entering your prompt message!', icon='👉')
+            st.success('Ask away!')
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
